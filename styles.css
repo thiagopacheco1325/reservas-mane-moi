@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container-reserva {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.logo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.grupo-input {
+  margin-bottom: 15px;
+}
+
+.linha-dupla {
+  display: flex;
+  gap: 15px;
+}
+
+.linha-dupla .grupo-input {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #25d366; /* Cor do WhatsApp */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1ebe5d;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+.aviso-horario {
+  font-size: 13px;
+  color: #d9534f;
+  background-color: #fdf2f2;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+/* Estilos para o botão do Instagram */
+.btn-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.btn-instagram:hover {
+  opacity: 0.85;
+}
+
+.btn-instagram svg {
+  width: 22px;
+  height: 22px;
+}
+/* Estilos para os botões secundários (Local e Avaliação) */
+.botoes-secundarios {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-local,
+.btn-avaliar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.botoes-secundarios svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-local {
+  background-color: #1a73e8; /* Azul limpo */
+  color: white;
+}
+
+.btn-avaliar {
+  background-color: #fbbc04; /* Dourado/Amarelo */
+  color: #333; /* Texto escuro para contraste */
+}
+
+.btn-local:hover,
+.btn-avaliar:hover {
+  opacity: 0.85;
+}

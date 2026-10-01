@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Mesa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-reserva">
+      <img
+        src="assets/mane-moi-logo.jpg"
+        alt="Logo do Restaurante"
+        class="logo"
+      />
+      <h2>Faça a sua Reserva</h2>
+
+      <form id="formReserva">
+        <div class="grupo-input">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" required placeholder="O seu nome" />
+        </div>
+
+        <div class="grupo-input">
+          <label for="telefone">WhatsApp</label>
+          <input
+            type="tel"
+            id="telefone"
+            required
+            placeholder="(  ) 9xxxx-xxxx"
+          />
+        </div>
+
+        <div class="linha-dupla">
+          <div class="grupo-input">
+            <label for="data">Data</label>
+            <input type="date" id="data" required />
+          </div>
+
+          <div class="grupo-input">
+            <label for="hora">Horário</label>
+            <select id="hora" required>
+              <option value="">Selecione...</option>
+              <option value="20:30">20:30</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grupo-input">
+          <label for="pessoas">Número de Pessoas</label>
+          <select id="pessoas" required>
+            <option value="">Selecione...</option>
+            <option value="2">Até 2 pessoas</option>
+            <option value="3">3 pessoas</option>
+            <option value="4">4 pessoas</option>
+            <option value="5">5 pessoas</option>
+            <option value="6">6 pessoas</option>
+          </select>
+        </div>
+
+        <p class="aviso-horario">
+          ⚠️ <strong>Atenção:</strong> A reserva é garantida apenas até as
+          20:30. Após este horário, a mesa será repassada.
+        </p>
+
+        <button type="submit" id="btnReservar">
+          Confirmar Disponibilidade
+        </button>
+      </form>
+
+      <a
+        href="https://www.instagram.com/manemoibar/"
+        target="_blank"
+        class="btn-instagram"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        Siga-nos no Instagram
+      </a>
+
+      <!-- Novos botões Lado a Lado -->
+      <div class="botoes-secundarios">
+        <a
+          href="https://maps.app.goo.gl/TREboBKTRP3ppedu8"
+          target="_blank"
+          class="btn-local"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Localização
+        </a>
+        <a
+          href="https://www.google.com/maps/place/Man%C3%A9+Moi+Notre+Bar/@-28.4816257,-48.7835439,17z/data=!4m8!3m7!1s0x952153f36dd9504d:0xa737d9d0bc065a4f!8m2!3d-28.4816257!4d-48.7835439!9m1!1b1!16s%2Fg%2F11twcc0807?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          class="btn-avaliar"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+          Avaliar
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
